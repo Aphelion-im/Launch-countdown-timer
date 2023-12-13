@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+/* Variables */
+$clr-grayish-blue: hsl(237, 18%, 59%);
+$clr-soft-red: hsl(345, 95%, 68%);
+$clr-white: hsl(0, 0%, 100%);
+$clr-dark-desaturated-blue: hsl(236, 21%, 26%);
+$clr-very-dark-blue: hsl(235, 16%, 14%);
+$clr-very-dark-blue: hsl(234, 17%, 12%);
+$clr-desert: hsl(273, 23%, 18%); // #30243A
+$ff-main: 'Red Hat Text', sans-serif;
+$fw-normal: 400;
+$fw-bold: 700;
+
+/* Global styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Kevin Powell's image reset. https://www.youtube.com/watch?v=345V2MU3E_w */
+img {
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+::selection {
+  color: $clr-white;
+  background-color: $clr-soft-red;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 62.5%; // 10 pixels = 1rem
+}
+
+body {
+  font-family: $ff-main;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background: $clr-very-dark-blue; // Fallback
+  background: url("./assets/images/bg-stars.svg"), linear-gradient(0deg, rgba(49, 28, 77, 1) 0%, rgba(22, 22, 57, 1) 100%);
+  background-size: contain
+}
+
+.box-shadow {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.attribution a {
+  color: $clr-soft-red;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Countdown Timer */
+.countdown-window {
+  max-width: 375px;
+  width: 90%;
+  margin-bottom: 6rem;
+  z-index: 1;
+
+  h1 {
+    color: $clr-white;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    letter-spacing: 4px;
+    margin-bottom: 5.5rem;
+    font-size: 2rem;
+  }
+
+  .output {
+    font-size: 3rem;
+    font-weight: $fw-bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .number {
+    border-radius: 8px;
+    width: 75px;
+    height: 75px;
+    color: $clr-soft-red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $clr-dark-desaturated-blue linear-gradient(0deg, rgba(52, 54, 79, 1) 0%, rgba(40, 39, 56, 1) 100%);
+  }
+
+  .indicator {
+    display: inline-block;
+    color: $clr-grayish-blue;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px; // Must work together with text-indent for correct text-align
+    text-indent: 4px;
+    width: 100%;
+    text-align: center;
+    font-weight: $fw-bold;
+    transform: translateY(-3px);
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: url("./assets/images/pattern-hills.svg") no-repeat top center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    img:hover {
+      filter: brightness(120%);
+    }
+  }
+}
+
+/********** Media Queries **********/
+@media screen and (min-width: 768px) {
+}
