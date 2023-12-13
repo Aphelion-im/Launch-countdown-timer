@@ -1,4 +1,4 @@
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b8d1072f-69dc-4f82-afe2-4940a6343d32/deploy-status)](https://app.netlify.com/sites/aphelion-launch-countdown-timer/deploys)
 # Frontend Mentor - Launch countdown timer solution
 
 This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
