@@ -87,7 +87,7 @@ body {
   min-height: 100vh;
   background: $clr-very-dark-blue; // Fallback
   background: url("./assets/images/bg-stars.svg"), linear-gradient(0deg, rgba(49, 28, 77, 1) 0%, rgba(22, 22, 57, 1) 100%);
-  background-size: contain
+  background-size: contain;
 }
 
 .box-shadow {

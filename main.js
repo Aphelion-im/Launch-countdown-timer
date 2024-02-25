@@ -4,7 +4,7 @@ import './styles.scss';
 
 window.addEventListener("load", () => {
 
-    const countDownDate = new Date("Jan 1, 2024 00:00:00").getTime();
+    const countDownDate = new Date("Jan 1, 2025 00:00:00").getTime();
 
     const x = setInterval(function () {
 
