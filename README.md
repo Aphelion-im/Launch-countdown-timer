@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solution on Github](https://github.com/Aphelion-im/Launch-countdown-timer)
+- Live Site URL: [Countdown Timer Live Demo](https://aphelion-launch-countdown-timer.netlify.app)
 
 ## My process
 
